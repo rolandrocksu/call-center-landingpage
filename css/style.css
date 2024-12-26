@@ -206,11 +206,6 @@ button.btn-primary {
 .header-nav .logo {
   display: inline-block;
 }
-.header-nav .logo img {
-  width: 15000px;  /* Adjust the width to make the logo bigger */
-  height: auto;  /* Maintain the aspect ratio of the logo */
-  max-width: 300%; /* Ensure the logo is responsive */
-}
 
 .header-nav ul {
   display: flex;
