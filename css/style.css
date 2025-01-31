@@ -185,7 +185,6 @@ button.btn-left:hover .lnr.lnr-arrow-right {
 button.btn-primary {
   transition: 44s;
 }
-
 /* _____ style header-nav _____ */
 .header-nav {
   padding: 10px 0;
@@ -200,11 +199,20 @@ button.btn-primary {
   -o-transition: 250ms linear;
   transition: 250ms linear;
 }
+
 .header-nav.active {
   box-shadow: -21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3);
 }
+
 .header-nav .logo {
   display: inline-block;
+  width: 350px;
+}
+
+.header-nav .container {
+  max-width: 1200px; /* Adjust this value to make the header wider */
+  margin: 0 auto;
+  padding: 0 20px; /* Add padding to the sides */
 }
 
 .header-nav ul {
@@ -212,38 +220,44 @@ button.btn-primary {
   justify-content: flex-end;
   padding-right: 60px;
 }
+
 .header-nav ul li {
   position: relative;
-  margin-left: 10px;
+  margin-left: 20px; /* Increase spacing between menu items */
 }
+
 .header-nav ul li:hover ul {
   opacity: 1;
   visibility: visible;
   margin-top: 0;
 }
+
 .header-nav ul li a {
   color: #222;
   text-transform: uppercase;
-  font-size: 12px;
-  padding: 5px 10px;
+  font-size: 17px; /* Slightly larger font size */
+  padding: 5px 12px; /* Increase padding for wider click area */
   font-weight: 400;
   -webkit-transition: 250ms linear;
   -moz-transition: 250ms linear;
   -o-transition: 250ms linear;
   transition: 250ms linear;
 }
+
 .header-nav ul li a > .lnr-chevron-down {
   font-size: 8px;
   font-weight: bold;
   margin-left: 4px;
 }
+
 .header-nav ul li:hover > a,
 .header-nav ul li a.active {
   color: #8490ff;
 }
+
 .header-nav ul ul {
   position: absolute;
-  width: 200px;
+  width: 220px; /* Slightly wider dropdown */
   box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
   padding: 15px 10px;
   flex-direction: column;
@@ -257,13 +271,16 @@ button.btn-primary {
   visibility: hidden;
   opacity: 0;
 }
+
 .header-nav ul ul li {
   margin-left: 0;
   margin-bottom: 15px;
 }
+
 .header-nav ul ul li:last-child {
   margin-bottom: 0;
 }
+
 .header-nav .bars {
   display: flex;
   flex-direction: column;
@@ -271,11 +288,12 @@ button.btn-primary {
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  right: 15px;
+  right: 25px; /* Adjust position for wider header */
   top: 64%;
   z-index: 100;
   transform: translateY(-50%);
 }
+
 .header-nav .bars span {
   display: block;
   margin-bottom: 7px;
@@ -286,12 +304,14 @@ button.btn-primary {
   -o-transition: 150ms linear;
   transition: 150ms linear;
 }
+
 .header-nav .bars.active span:first-child {
   -webkit-transform: translateY(9px) rotate(135deg);
   -moz-transform: translateY(9px) rotate(135deg);
   -o-transform: translateY(9px) rotate(135deg);
   transform: translateY(9px) rotate(135deg);
 }
+
 .header-nav .bars.active span:nth-child(2) {
   opacity: 0;
   -webkit-transform: translateX(-100px);
@@ -299,6 +319,7 @@ button.btn-primary {
   -o-transform: translateX(-100px);
   transform: translateX(-100px);
 }
+
 .header-nav .bars.active span:last-child {
   -webkit-transform: translateY(-9px) rotate(-135deg);
   -moz-transform: translateY(-9px) rotate(-135deg);
