@@ -3,10 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
         <meta
             name="description"
-            content="Rolnel provides low-cost, high-quality call center services including dispatching, cold calling, appointment scheduling, and virtual assistance. Partner with us today!" />
-        <title>Affordable, Low-cost Call Center Services | Dispatching, Cold Calling, Appointments</title>
+            content="RolNel provides affordable, high-quality call center services in California and across the USA. Specializing in dispatching, cold calling, appointment scheduling, and virtual assistance. Partner with us today!" />
+        <title>Affordable Call Center Services in California & USA | RolNel</title>
+
+        <meta property="og:title" content="Affordable Call Center Services in California & USA | RolNel" />
+        <meta property="og:description" content="RolNel provides affordable, high-quality call center services in California and across the USA. Specializing in dispatching, cold calling, appointment scheduling, and virtual assistance. Partner with us today!" />
+        <meta property="og:image" content="https://www.rolnel.com/images/logo-color.svg" />
+        <meta property="og:url" content="https://www.rolnel.com" />
+        <meta property="og:type" content="website" />
 
         <!-- favicon -->
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
@@ -23,6 +30,33 @@
 
         <!-- Main stylesheet -->
         <link rel="stylesheet" href="css/style.css" />
+
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "RolNel Call Center Services",
+              "image": "https://www.rolnel.com/images/logo-color.svg",
+              "description": "Affordable call center services in California and the USA, specializing in appliance repair, dispatching and virtual assistance.",
+              "url": "https://www.rolnel.com",
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=61571693109214",
+                "https://www.instagram.com/rol.nel/",
+              ],
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ]
+              }
+            }
+            </script>
     </head>
 
     <body>
@@ -31,58 +65,14 @@
             <span class="lnr lnr-chevron-up"></span>
         </div>
 
-        <!-- _____ header-nav _____ -->
-        <!--
-    <div class="container position-relative">
-        <div class="row justify-content-end">
-            <div class="col col-md-1 d-block d-lg-none">
-                <div class="bars">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-        <!-- <header class="header-nav">
-            <div class="container position-relative">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col col-lg-2">
-                        <a href="index.html" class="logo"
-                            ><img src="images/logo-color.svg" alt="logo" class="img-fluid"
-                        /></a>
-                    </div>
-                    <div class="col col-md-1 d-block d-lg-none">
-                        <div class="bars">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="col col-lg-10 d-none d-lg-block ms-auto">
-                        <ul class="menu">
-                            <li><a href="#" class="link-to active" data-scroll="home">home</a></li>
-                            <li><a href="#" class="link-to" data-scroll="feature">feature</a></li>
-                            <li><a href="#" class="link-to" data-scroll="offer">we offer</a></li>
-                            <li><a href="#" class="link-to" data-scroll="pricing">Pricing</a></li>
-                            <li><a href="#" class="link-to" data-scroll="about">about</a></li>
-                            <li><a href="#" class="link-to" data-scroll="contact">contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header> -->
-
-
+        <!-- _______header-nav_______ -->
 
         <header class="header-nav">
             <div class="container position-relative">
                 <div class="row align-items-center justify-content-between">
                     <div class="col col-lg-2">
                         <a href="index.html" class="logo">
-                            <img src="images/logo-color.svg" alt="logo" class="img-fluid">
+                            <img src="images/logo-color.svg" alt="RolNel Call Center Services in California Logo" class="img-fluid">
                         </a>
                     </div>
                     <div class="col col-md-1 d-block d-lg-none">
@@ -135,12 +125,12 @@
                 <div class="row">
                     <div class="col-lg-7 ms-auto">
                         <div class="hero-text wow fadeInRight">
-                            <h3>Affordable Excellence in Call Center Solutions</h3>
-                            <h1>Boosting your efficiency while saving costs.</h1>
-                            <p>
-                                Rolnel provides world-class call center services at unbeatable prices. We ensure high-quality support for your customers, making your business operations seamless and hassle-free.
+                            <h1>Your Trusted Partner in Customer Success</h1>
+                            <h3 class="mt-3">Your Success, Our Priority.</h3>
+                            <p class="mt-4">
+                                At RolNel, we turn calls into connections and partner with you for better service. Let us help you build lasting relationships with your customers.
                             </p>
-                            <button class="btn btn-primary wow fadeInUp">discover now</button>
+                            <button class="btn btn-primary wow fadeInUp" onclick="scrollToWeOffer()">Let’s Get Started!</button>
                         </div>
                     </div>
             </div>
@@ -150,6 +140,12 @@
         <!-- _____ feature _____ -->
         <section class="feature-parent block wow fadeInUpBig" data-wow-offset="200" id="feature">
             <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Why Choose RolNel?</h2>
+                        <p class="mb-5">We’re committed to delivering excellence in every interaction.</p>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="feature-inner">
@@ -163,7 +159,7 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="feature-inner">
                             <img src=" images/f3.png.webp" alt="Cost-Effective Solutions Icon" />
-                            <h3>Cost-Effective Solutions</h3>
+                            <h3>Maximizing Value, Minimizing Costs</h3>
                             <p>
                                 Get premium services at a fraction of the cost, maximizing your budget without compromising quality.
                             </p>
@@ -172,9 +168,9 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="feature-inner">
                             <img src="images/f2.png.webp" alt="24/7 Availability Icon" />
-                            <h3>24/7 Availability</h3>
+                            <h3>Always On, Always Ready</h3>
                             <p>
-                                Round-the-clock support to cater to your business needs anytime, anywhere.
+                                24/7 support to ensure your business never misses a beat.
                             </p>
                         </div>
                     </div>
@@ -189,60 +185,47 @@
                 <div class="row text-center">
                     <div class="col-lg-8 mx-auto wow fadeIn">
                         <div class="main-title">
-                            <h2 class="text-white mb-3">Your Trusted Partner in Customer Success</h2>
-                            <p>Choose us for expert fitness support and personalized guidance.</p>
+                            <h2 class="text-white mb-3">What Our Clients Say</h2>
+                            <p>Hear from businesses that have partnered with RolNel.</p>
                         </div>
                     </div>
                     <div class="owl-carousel">
                         <div class="testmonials-inner">
+                            <!-- <img src="images/user3.png.webp" alt="user3" /> -->
                             <div class="testmonials-items">
                                 <p>
                                     Rolnel transformed our customer service operations, delivering cost savings and happier customers.
                                 </p>
                                 <div class="testmonials-footer">
-                                    <h3>A Happy Client</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="testmonials-inner">
-                            <img src="images/user2.png.webp" alt="user2" />
-                            <div class="testmonials-items">
-                                <p>
-                                    Accessories Here you can find the best computer accessory for your laptop, monitor,
-                                    printer, scanner, speaker, projector, hardware.
-                                </p>
-                                <div class="testmonials-footer">
-                                    <h3>Mark Alviro Wiens</h3>
-                                    <p>CEO at Google</p>
+                                    <h3>Daniel Cross</h3>
+                                    <!-- <p>Co-founder at Fireflies</p> -->
                                 </div>
                             </div>
                         </div>
                         <div class="testmonials-inner">
-                            <img src="images/user1.png.webp" alt="user1" />
+                            <!-- <img src="images/user2.png.webp" alt="user2" /> -->
                             <div class="testmonials-items">
                                 <p>
-                                    Accessories Here you can find the best computer accessory for your laptop, monitor,
-                                    printer, scanner, speaker, projector, hardware.
+                                    Their team is professional, responsive, and truly cares about our success. Highly recommend!
                                 </p>
                                 <div class="testmonials-footer">
-                                    <h3>Mark Alviro Wiens</h3>
-                                    <p>CEO at Google</p>
+                                    <h3>Chris Brown</h3>
+                                    <!-- <p>ABC Corp</p> -->
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- <div class="testmonials-inner">
-                            <img src="images/user2.png.webp" alt="user2" />
+                        </div>
+                        <div class="testmonials-inner">
+                            <!-- <img src="images/user1.png.webp" alt="user1" /> -->
                             <div class="testmonials-items">
                                 <p>
-                                    Accessories Here you can find the best computer accessory for your laptop, monitor,
-                                    printer, scanner, speaker, projector, hardware.
+                                    We’ve seen a 30% improvement in customer satisfaction since partnering with RolNel.
                                 </p>
                                 <div class="testmonials-footer">
-                                    <h3>Mark Alviro Wiens</h3>
-                                    <p>CEO at Google</p>
+                                    <h3>Razmik Poghosyan</h3>
+                                    <!-- <p>Some company</p> -->
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -293,7 +276,7 @@
                             <p class="special-padding">
                                 At Rolnel, we deliver efficient and affordable call center solutions, including dispatching, appointment setting, cold calling, and virtual assistance, tailored to your business needs.
                             </p>
-                            <button class="btn btn-primary">view details</button>
+                            <button class="btn btn-primary" onclick="scrollToContact()">Connect</button>
                         </div>
                     </div>
                 </div>
@@ -302,32 +285,31 @@
         <!-- ./offer -->
 
         <!-- _____ counter _____ -->
-        <!-- <section class="section pt-0 counter">
+        <section class="section pt-0 counter">
             <div class="container">
                 <div class="row text-center">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Our Impact in Numbers</h2>
+                        <p class="mb-5">We measure success by the results we deliver.</p>
+                    </div>
+                </div>
+
+                <div class="row text-center">
                     <div class="col mb-3">
-                        <h2 class="count" data-count="856">0</h2>
-                        <p>Projects Completed</p>
+                        <h2 class="count" data-count="50000">0</h2>
+                        <p>Calls Managed Yearly</p>
                     </div>
                     <div class="col mb-3">
-                        <h2 class="count" data-count="721">0</h2>
-                        <p>Really Happy Clients</p>
+                        <h2 class="count" data-count="95">0</h2>
+                        <p>Client Retention Rate</p>
                     </div>
                     <div class="col mb-3">
-                        <h2 class="count" data-count="340">0</h2>
-                        <p>Total Tasks Completed</p>
-                    </div>
-                    <div class="col mb-3">
-                        <h2 class="count" data-count="540">0</h2>
-                        <p>Cups of Coffee Taken</p>
-                    </div>
-                    <div class="col mb-3 mb-lg-0">
-                        <h2 class="count" data-count="434">0</h2>
-                        <p>In House Professionals</p>
+                        <h2 class="count" data-count="5">0</h2>
+                        <p>Years of Combined Team Experience</p>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- ./counter -->
 
         <!-- _____ services _____ -->
@@ -415,7 +397,7 @@
                             <h3 class="text-white">Basic</h3>
                             <h4 class="price">$3-4 <span>/Hour</span></h4>
                             <p>Professional call answering for appliance repair inquiries and service requests.</p>
-                            <button class="btn btn-primary">Get Connected</button>
+                            <button class="btn btn-primary" onclick="scrollToContact()">Get Connected</button>
                         </div>
                     </div>
                     <!-- Rocketship Premium -->
@@ -424,7 +406,7 @@
                             <h3 class="text-white">Premium</h3>
                             <h4 class="price">$5-8 <span>/Hour</span></h4>
                             <p>Efficient dispatching services to ensure technicians are sent to the right locations quickly.</p>
-                            <button class="btn btn-primary">Get Connected</button>
+                            <button class="btn btn-primary" onclick="scrollToContact()">Get Connected</button>
                         </div>
                     </div>
                     <!-- Mission Professional -->
@@ -433,7 +415,7 @@
                             <h3 class="text-white">Professional</h3>
                             <h4 class="price">$9-12 <span>/Hour</span></h4>
                             <p>Comprehensive service combining both call answering and dispatching for appliance repairs.</p>
-                            <button class="btn btn-primary">Get Connected</button>
+                            <button class="btn btn-primary" onclick="scrollToContact()">Get Connected</button>
                         </div>
                     </div>
                 </div>
@@ -451,35 +433,57 @@
                     <div class="col-lg-5 col-12 ms-auto no-padding wow fadeInRightBig">
                         <div class="about-details">
                             <h2 class="mb-4">
-                                Exceptional <br />
-                                Customer Support
+                                Our Story
                             </h2>
                             <p class="special-padding">
-                                At Rolnel, we pride ourselves on delivering responsive, reliable, and professional support.
-                                 Our highly skilled team is dedicated to managing your customer interactions with precision and care, ensuring satisfaction at every step. Trust us to be your partner in success.
+                                At RolNel, every call is an opportunity to connect. Our mission is simple: redefine customer service by turning every interaction into a positive experience. With a dedicated team, we help businesses grow, build lasting relationships, and ensure every call creates success.
                             </p>
-                            <button class="btn-left btn-primary">
-                                learn more <span class="lnr lnr-arrow-right"></span>
+
+                            <p class="special-padding">
+                                RolNel started with a vision: to transform how businesses connect with their customers. We’re not just about solving problems; we’re about building real, lasting connections that empower your business to grow. Our team is dedicated to becoming your trusted partner—offering tailored support that makes your customers feel valued, heard, and understood, every time they reach out.
+                            </p>
+                            <button class="btn-left btn-primary" onclick="scrollToContact()">
+                                connect <span class="lnr lnr-arrow-right"></span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ./about -->
-
-        <!-- _____ about _____ -->
+        
         <section>
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-12 mx-auto no-padding wow fadeInLeftBig">
                         <div class="about-details">
-                            <h2 class="mb-4">Your Trusted Partner for Business Growth</h2>
+                            <h2 class="mb-4">Our Core Values</h2>
                             <p class="special-padding">
-                                At Rolnel, we believe that streamlined operations and customer-focused communication are at the heart of every successful business. Our call center provides tailored solutions for dispatching, scheduling, and virtual assistance, helping your company thrive while we handle the details.
+                                At RolNel, we listen with empathy, innovate for the future, and act with integrity. Our commitment to excellence drives us to provide solutions that evolve with your business, building trust every step of the way.
                             </p>
-                            <button class="btn-left btn-primary">
-                                see details<span class="lnr lnr-arrow-right"></span>
+                            <ul class="core-values-list list-unstyled">
+                                <li class="mb-3">
+                                    <span class="lnr lnr-heart fs-3 text-primary me-3"></span>
+                                    <strong class="h5">Empathy:</strong> We listen with empathy to understand your needs.
+                                </li>
+                                <li class="mb-3">
+                                    <span class="lnr lnr-rocket fs-3 text-primary me-3"></span>
+                                    <strong class="h5">Innovation:</strong> We innovate to provide cutting-edge solutions.
+                                </li>
+                                <li class="mb-3">
+                                    <span class="lnr lnr-thumbs-up fs-3 text-primary me-3"></span>
+                                    <strong class="h5">Integrity:</strong> We act with honesty and transparency.
+                                </li>
+                                <li class="mb-3">
+                                    <span class="lnr lnr-flag fs-3 text-primary me-3"></span>
+                                    <strong class="h5">Commitment:</strong> We’re committed to your success, every step of the way.
+                                </li>
+                            </ul>
+                            <p class="special-padding">
+                                <br>
+                            </p>
+                            
+                            <button class="btn-left btn-primary" onclick="scrollToContact()">
+                                connect<span class="lnr lnr-arrow-right"></span>
                             </button>
                         </div>
                     </div>
@@ -496,7 +500,6 @@
                 </div>
             </div>
         </section>
-        <!-- ./about -->
 
         <!-- _____ brand _____ -->
         <!-- <section class="brand">
@@ -603,7 +606,7 @@
                 <div class="row mt-5 justify-content-between">
                     <div class="col-lg-6 mb-4 mb-lg-0 mt-4">
                         <p class="copy-right">
-                            Copyright &copy; Rolnel 2025. All rights reserved
+                            Copyright &copy; Rolnel 2020 - 2025. All rights reserved
                         </p>
                     </div>
                     <div class="col-lg-6">

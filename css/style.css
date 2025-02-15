@@ -737,6 +737,86 @@ button.btn-primary {
   filter: grayscale(0%);
 }
 
+/* Core Values Section Styling */
+.core-values-section {
+  background-color: #f8f9fa; /* Light background */
+  padding: 80px 0; /* Add padding for spacing */
+}
+
+.core-values-section .about-details {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.core-values-section h2 {
+  color: #2c3e50; /* Dark blue for headings */
+  font-weight: 700;
+}
+
+.core-values-section p.lead {
+  color: #34495e; /* Slightly lighter blue for text */
+  font-size: 1.1rem;
+}
+
+.core-values-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.core-values-list .lnr {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #da6d00; /* Blue for icons */
+}
+
+.core-values-section .btn-primary {
+  background-color: #da6d00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.core-values-section .btn-primary:hover {
+  background-color: #da6d00; /* Darker blue on hover */
+}
+
+.overlay-about {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.overlay-about img {
+  transition: transform 0.3s ease;
+}
+
+.overlay-about:hover img {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.inset {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inset img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.inset img:hover {
+  transform: scale(1.1); /* Slightly enlarge play button on hover */
+}
+
 /* _____ style contact _____ */
 #contact input,
 #contact textarea {

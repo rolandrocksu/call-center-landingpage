@@ -132,33 +132,73 @@ closeBars.onclick = function () {
     bars.classList.remove("active");
 };
 
+// let counterCount = document.querySelector(".counter");
+// let countIncrease = document.querySelectorAll(".count");
+// let stopCounter = false;
+// let speed = 100;
+
+// function scrolledCounter() {
+//     if (
+//         this.scrollY >= counterCount.offsetTop - 350 &&
+//         this.scrollY <= counterCount.offsetTop + counterCount.offsetHeight - 350
+//     ) {
+//         if (!stopCounter) countIncrease.forEach((el) => counter(el));
+//         stopCounter = true;
+//     }
+// }
+
+// window.addEventListener("scroll", scrolledCounter);
+
+// function counter(el) {
+//     setInterval(() => {
+//         let target = Number(el.getAttribute("data-count"));
+//         let numContent = Number(el.textContent);
+//         let increase = target / speed ;
+//         if (target > numContent) {
+//             el.textContent = Math.floor(increase + numContent);
+//         }
+//     });
+// }
+
 let counterCount = document.querySelector(".counter");
 let countIncrease = document.querySelectorAll(".count");
 let stopCounter = false;
-let speed = 100;
+let speed = 250; // Adjust this value to control the counting speed
 
-function scrolledCounter() {
-    if (
-        this.scrollY >= counterCount.offsetTop - 350 &&
-        this.scrollY <= counterCount.offsetTop + counterCount.offsetHeight - 350
-    ) {
-        if (!stopCounter) countIncrease.forEach((el) => counter(el));
-        stopCounter = true;
-    }
-}
-
-window.addEventListener("scroll", scrolledCounter);
-
+// Function to animate the counter
 function counter(el) {
-    setInterval(() => {
-        let target = Number(el.getAttribute("data-count"));
-        let numContent = Number(el.textContent);
-        let increase = target / speed ;
-        if (target > numContent) {
-            el.textContent = Math.floor(increase + numContent);
+    const target = Number(el.getAttribute("data-count")); // Get the target number
+    const increment = target / speed; // Calculate the increment value
+    let current = 0; // Start counting from 0
+
+    const interval = setInterval(() => {
+        current += increment; // Increment the current value
+        if (current >= target) {
+            el.textContent = target; // Set the final value
+            clearInterval(interval); // Stop the interval
+        } else {
+            el.textContent = Math.floor(current); // Update the displayed number
         }
-    });
+    }, 10); // Adjust the interval speed (10ms in this case)
 }
+
+// Intersection Observer to trigger the counter when the section comes into view
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting && !stopCounter) {
+                countIncrease.forEach((el) => counter(el)); // Start the counter
+                stopCounter = true; // Prevent the counter from running again
+            }
+        });
+    },
+    {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+    }
+);
+
+// Observe the counter section
+observer.observe(counterCount);
 
 
 let goUp = document.querySelector(".up");
@@ -176,3 +216,18 @@ goUp.onclick = function () {
 
 let copyRight = document.querySelector(".copy-right span");
 copyRight.innerHTML = new Date().getFullYear();
+
+
+function scrollToContact() {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+function scrollToWeOffer() {
+    const contactSection = document.getElementById('offer');
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
